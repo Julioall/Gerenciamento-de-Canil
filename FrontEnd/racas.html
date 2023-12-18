@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Canil - Adicionar Raças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregarRacas()">
+    <div class="container">
+        <div class="container-cabecalho">
+            <i><img width="40px" height="40px" src="img/pata.png" alt="logo adicionar" /></i>
+            <h1>
+                Adicionar Raças
+            </h1>
+            <a href="index.html">
+                <i><img width="40px" height="40px" src="img/seta-esquerda.png" alt="logo adicionar" /></i>
+            </a>
+        </div>
+
+        <div class="container-cadastro">
+            <h4>Raças Cadastradas:</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td><strong>Raça</strong></td>
+                    </tr>
+                </thead>
+                <tbody id="dados"></tbody>
+            </table>
+            <h4>Adicionar nova raça:</h4>
+            <form onsubmit="adicionarRaca(event)">
+                <input type="text" id="input-raca" placeholder="Nome da raça">
+                <button type="submit" class="btn-verde">
+                    Adicionar
+                </button>
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

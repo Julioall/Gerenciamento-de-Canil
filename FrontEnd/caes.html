@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Canil - Pagina Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregarCaes()">
+    <div class="container">
+        <div class="container-cabecalho">
+            <i><img width="40px" height="40px" src="img/cachorro.png" alt="logo adicionar" /></i>
+            <h1>
+                Adicionar Cães
+            </h1>
+            <a href="index.html">
+                <i><img width="40px" height="40px" src="img/seta-esquerda.png" alt="logo adicionar" /></i>
+            </a>
+        </div>
+
+        <div class="container-cadastro">
+            <h3>Cães Cadastrados:</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td><strong>Nome</strong></td>
+                        <td><strong>Raça</strong></td>
+                    </tr>
+                </thead>
+                <tbody id="dados"></tbody>
+            </table>
+            <h4>Adicionar novo cão:</h4>
+            <form onsubmit="adicionarCao(event)" class="form">
+                <input type="text" id="input-nome" placeholder="Nome do cão">
+                <select id="input-raca">
+                    <option value="">Selecione a raça...</option>
+                </select>
+                <button type="submit" class="btn-verde">Adicionar</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
